@@ -27,6 +27,20 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
     <title></title>
   </head>
   <body>
+  	<div id="gallery">
+  <figure><img src="http://lorempixel.com/400/200/animals/" alt=""><figcaption></figcaption></figure>
+  <figure><img src="http://lorempixel.com/400/200/city/" alt=""><figcaption></figcaption></figure>
+  <figure><img src="http://lorempixel.com/400/200/people/" alt=""><figcaption></figcaption></figure>
+</div>  
+	<script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
 
+      $("img").on("contextmenu", function(e){
+       	e.preventDefault();
+       	alert("Imágenes con derecho de autor,no se pueden descargar sin el consentimiento del autor");
+      });
+
+
+    </script>
   </body>
 </html>
